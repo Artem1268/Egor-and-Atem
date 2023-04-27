@@ -1,4 +1,4 @@
 import random
-a = random.randint(3,6)
+a = random.choice("КНБ")
 print(a)
 print("Это ваш результат")
