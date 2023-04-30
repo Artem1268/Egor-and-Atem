@@ -1,9 +1,9 @@
-import random
+from random import choice
 playerscore = 0
 botscore = 0
 while True:
     playerchoice = input("Введите выбор К-камень, Н-ножници, Б-бумага:")
-    botchice = random.choice("КНБ")
+    botchice = choice("КНБ")
     if playerchoice == "К" and botchice == "Н":
         print("Победа!!!")
         playerscore = playerscore + 1
