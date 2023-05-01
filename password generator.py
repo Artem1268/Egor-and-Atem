@@ -9,8 +9,6 @@ password = "".join(random.sample(a, length))
 print(f"Ваш пароль:{password}")
 b = input("Сохронять ли пароль?(Да/Нет):  ")
 file = open("passwords.txt", "w")
-if b == "Да" or "да" or "ДА":
+if b.lower() == "да":
     file.write(f"{password}\n")
-else:
-    pass
 file.close()
